@@ -1,6 +1,6 @@
 export const registerApi = async (data) => {
    try {
-      const response = await fetch("http://localhost:5000/api/user/register", {
+      const response = await fetch("https://banking-app-backend-2n55.onrender.com/api/user/register", {
          method: "POST",
          body: JSON.stringify(data),
          headers:{
@@ -20,7 +20,7 @@ export const registerApi = async (data) => {
 
 export const loginApi = async (data) => {
    try {
-      const response = await fetch("http://localhost:5000/api/user/login", {
+      const response = await fetch("https://banking-app-backend-2n55.onrender.com/api/user/login", {
          method: "POST",
          body: JSON.stringify(data),
          headers:{
@@ -41,7 +41,7 @@ export const loginApi = async (data) => {
 
 export const chargeOffApi = async (newBalance) => {
    try {
-      const response = await fetch("http://localhost:5000/api/user/transaction/getMoney", {
+      const response = await fetch("https://banking-app-backend-2n55.onrender.com/api/user/transaction/getMoney", {
          method: "POST",
          body: JSON.stringify({balance:newBalance}),
          headers:{
@@ -62,7 +62,7 @@ export const chargeOffApi = async (newBalance) => {
 
 export const payInApi = async (newBalance) => {
    try {
-      const response = await fetch("http://localhost:5000/api/user/transaction/postMoney", {
+      const response = await fetch("https://banking-app-backend-2n55.onrender.com/api/user/transaction/postMoney", {
          method: "POST",
          body: JSON.stringify({balance:newBalance}),
          headers:{
@@ -83,7 +83,7 @@ export const payInApi = async (newBalance) => {
 
 export const getUserApi = async() => {
    try {
-      const response = await fetch("http://localhost:5000/api/user/data",{
+      const response = await fetch("https://banking-app-backend-2n55.onrender.com/api/user/data",{
          credentials: "include"
       });
       const data = await response.json();
