@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect, useReducer } from 'react';
 import Navigation from './Navigation';
-import { chargeOffApi, payInApi, getUserApi } from './api';
+import { chargeOffApi, payInApi, getUserApi } from './Api';
 
 const getDate = ()=>{
   const date = new Date();

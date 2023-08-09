@@ -12,7 +12,7 @@ const port = process.env.PORT || 5050;
 const connectionString = process.env.MONGO_URL;
 
 // Start MIDDLEWARES
-app.use(cors({ credentials: true, origin: "http://localhost:5173" }));
+app.use(cors({ credentials: true, origin: "https://banking-app-backend-2n55.onrender.com" }));
 app.use(express.json());
 app.use(cookieParser());
 

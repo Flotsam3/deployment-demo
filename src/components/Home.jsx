@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navigation from './Navigation';
-import { registerApi, loginApi } from './api';
+import { registerApi, loginApi } from './Api';
 
 export default function Home() {
    const navigate = useNavigate();
